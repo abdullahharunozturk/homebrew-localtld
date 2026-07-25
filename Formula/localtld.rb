@@ -1,10 +1,10 @@
 class Localtld < Formula
   desc "Give your local projects real domains on dynamic ports"
   homepage "https://localtld.sh"
-  url "https://github.com/abdullahharunozturk/localtld/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "c6ccfdfb8b0d12b2cebf3af07503e1a76c65e7faf10b0e2260074bf482ed0b49"
+  url "https://github.com/abdullahharunozturk/localtld/archive/refs/tags/v0.1.2.tar.gz"
+  sha256 "b64818978eca77167c6da21d476c69cd166097eea972ede25a80c9fa49419703"
   license "MIT"
-  version "0.1.1"
+  version "0.1.2"
 
   depends_on :macos
   depends_on "caddy"
@@ -24,6 +24,6 @@ class Localtld < Formula
   end
 
   test do
-    assert_match "0.1.1", shell_output("#{bin}/localtld --version")
+    assert_match "0.1.2", shell_output("#{bin}/localtld --version")
   end
 end
